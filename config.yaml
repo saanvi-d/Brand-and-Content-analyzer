@@ -1,0 +1,14 @@
+# Model settings
+model_name: "gemini-3.5-flash-lite"
+temperature: 0.2
+max_output_tokens: 1024
+
+# Prompt file location
+prompt_path: "prompts/content_analysis_prompt.txt"
+# Input data
+post_history_path: "data/sample_posts.csv"
+
+# Consistency check: a post is flagged as an outlier if its voice
+# descriptor overlap with the brand's dominant descriptors falls below
+# this fraction (0.0 - 1.0)
+consistency_outlier_threshold: 0.34
